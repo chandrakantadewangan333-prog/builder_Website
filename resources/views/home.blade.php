@@ -27,7 +27,7 @@
 
 <body>
 <div class="relative group bg-cover bg-center xl:h-[700px] h-[500px] ">
-  <img src="{{ asset('images/back.avif') }}" alt="bg-image" class="absolute inset-0 w-full h-full object-cover">
+  <img src="{{ asset('images/back.avif') }}" alt="bg-image" class="absolute inset-0 w-full h-full object-cover" data-animate="slide-down">
 
   <!-- Navbar -->
   <nav class="fixed flex top-0 left-0 w-full z-50 md:px-20 px-6 py-3 items-center justify-between backdrop-blur-sm box-shadow slide-down transition-all duration-500" id="navbar" data-animate="slide-down">
