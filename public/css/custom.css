@@ -1,0 +1,57 @@
+ /* ANIMATIONS */
+        @keyframes slideInFromLeft {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+        .slide-in-left { animation: slideInFromLeft 1.5s ease-out forwards; }
+
+        @keyframes slideInFromRight {
+            0% { transform: translateX(100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+        .slide-in-right { animation: slideInFromRight 1.5s ease-out forwards; }
+
+        @keyframes slideUp {
+            0% { transform: translateY(50%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .slide-up { animation: slideUp 1.5s ease-out forwards; }
+
+        @keyframes slideDown {
+            0% { transform: translateY(-50%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .slide-down { animation: slideDown 1.5s ease-out forwards; }
+
+        @keyframes zoom-in{
+             0% {opacity: 0;transform: scale(.5);}
+             100% { opacity: 1;transform: scale(1);}
+        }
+        .zoom-in {animation: zoom-in 0.6s ease-out forwards; }
+
+        @keyframes expand-horizontally {
+             0% {transform: scaleX(0);}
+             100% { transform: scaleX(1);}
+        }
+        .expand-horizontally { animation: expand-horizontally 0.6s ease-out forwards; transform-origin: left;}
+        
+        .scrolled {
+            background-color: white !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* SWIPER PAGINATION */
+        .swiper-pagination-recognized-by {
+            position: relative !important;
+        }
+        .swiper-pagination-recognized-by .swiper-pagination-bullet {
+            width: 40px;
+            height: 4px;
+            background: #ffffff40;
+            border-radius: 9999px;
+            margin: 0 6px !important;
+            transition: 0.3s ease;
+        }
+        .swiper-pagination-recognized-by .swiper-pagination-bullet-active {
+            background: white;
+        }
